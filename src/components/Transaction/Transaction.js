@@ -12,7 +12,7 @@ function TransactionHistory({ data }) {
         </tr>
       </thead>
 
-      <body>
+      <tbody>
         {data.map(({ id, amount, type, currency }, index) => {
           let bgColor = index % 2 === 0 ? s.light : s.dark;
           return (
@@ -23,7 +23,7 @@ function TransactionHistory({ data }) {
             </tr>
           );
         })}
-      </body>
+      </tbody>
     </table>
   );
 }
